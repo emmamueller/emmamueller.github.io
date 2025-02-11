@@ -1,0 +1,89 @@
+/*CSS DOCUMENT*/
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+img {
+width: 100%; /*Please leave this line.*/
+display: grid;
+grid-column: 1/5;
+padding-bottom: 3em;
+}
+figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+body {
+    background-color: rgb(221, 221, 221);
+}
+div.container {
+    max-width: 80em;
+    margin: auto;
+    background-color: white;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+    padding-right: 2em ;
+    padding-left: 2em;
+    padding-bottom: 4em;
+}
+figcaption {
+padding: 2.5em 2.5em 2.5em 2.5em;
+font-family: poppins, sans-serif;  
+font-weight: 400;  
+font-style: italic;
+}
+h1 {
+display: grid;
+grid-column: 1/-1;
+background-color: rgb(239,132,52);
+color: rgb(255, 255, 255); /* Same as body background. */
+font-size: 2em;
+padding: 4rem 1rem .3rem ; /* You want three values. */
+font-weight: bold;
+font-family: Sutro, serif;  
+font-weight: 700;  
+font-style: normal;
+}
+h2 {
+    display: grid;
+background-color: rgb(239,132,52);
+color: rgb(248, 213, 173); 
+padding: .3rem .8em 1em  ;
+font-family: Sutro, serif;  
+font-weight: 400; 
+font-size: 1.3em;
+font-style: normal;
+}
+h3{
+    display: grid;
+    border-top: 2.5px solid rgb(239,132,52);
+color:rgb(239,132,52);
+font-family: Sutro, serif;  
+padding-top: 1.2em;
+font-weight: 300;  
+font-style: normal;
+font-size: 1.3em;
+text-transform: uppercase;
+letter-spacing: .1rem;
+}
+ul, ol {
+    padding-top: 1em;
+}
+li {
+padding: 0rem 0rem 1rem 0rem ;
+font-family: poppins, sans-serif;  
+font-weight: 400;  
+font-style: normal;
+font-size: 1em;
+}
+p {
+background-color: rgb(239,132,52);
+color: rgb(255, 255, 255); /* Same as body background. */
+padding: 1rem 1em 1em;
+font-family: poppins, sans-serif;  
+font-weight: 300;  
+font-style: normal;
+}
+
+/*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
